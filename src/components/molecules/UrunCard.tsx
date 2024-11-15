@@ -1,15 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { IProduct } from '../../models/IProduct'
 interface IUrunCardProps{
     urun: IProduct
 }
-function UrunCard() {
-    const urun ={
-        thumbnail: 'https://picsum.photos/100/100',
-        category: 'spor',
-        title: 'piskuvi',
-        price: 100
-    }
+function UrunCard(props:IUrunCardProps) {
+   
+const urun =props.urun
   return (
     <div className="col-4 mt-3">
         <div className="card">
